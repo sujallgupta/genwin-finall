@@ -12,7 +12,7 @@ export default function Genwin() {
   const [tocOpen, setTocOpen] = useState(false);
   const [touchStart, setTouchStart] = useState({ x: 0, y: 0 });
 
-  // ✅ Fix mobile 100vh issue
+  
   useEffect(() => {
     const setVh = () => {
       document.documentElement.style.setProperty("--vh", `${window.innerHeight}px`);
@@ -55,7 +55,7 @@ export default function Genwin() {
 };
 
 
-  // ✅ Download PDF
+  
   const downloadPDF = () => {
     const doc = new jsPDF({ unit: "pt", format: "a4" });
     pages.forEach((p, i) => {
